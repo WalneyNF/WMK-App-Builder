@@ -1,150 +1,223 @@
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="docs/readme/banner-dark.png" />
-    <img src="docs/readme/banner-light.png" width="800" alt="M3E Canvas" />
-  </picture>
-</p>
+<div align="center">
 
-<p align="center">
-  <strong>Sketch Material 3 Expressive screens in the browser, link them, tap through them, and copy a prompt for your AI coding tool.</strong>
-</p>
+![VYRO App Builder — identidade visual provisória](docs/vyro/logo.svg)
 
-<p align="center">
-  <a href="https://github.com/lnkiai/m3e-canvas/stargazers"><picture><source media="(max-width: 767px)" srcset="https://img.shields.io/github/stars/lnkiai/m3e-canvas?style=flat-square&logo=github&logoColor=white&color=6750A4&labelColor=1D1B20" /><img alt="GitHub stars" src="https://img.shields.io/github/stars/lnkiai/m3e-canvas?style=for-the-badge&logo=github&logoColor=white&color=6750A4&labelColor=1D1B20" /></picture></a>
-  <a href="https://github.com/sponsors/lnkiai"><picture><source media="(max-width: 767px)" srcset="https://img.shields.io/github/sponsors/lnkiai?style=flat-square&logo=githubsponsors&logoColor=white&color=7D5260&labelColor=1D1B20" /><img alt="Sponsors" src="https://img.shields.io/github/sponsors/lnkiai?style=for-the-badge&logo=githubsponsors&logoColor=white&color=7D5260&labelColor=1D1B20" /></picture></a>
-  <a href="LICENSE"><picture><source media="(max-width: 767px)" srcset="https://img.shields.io/badge/license-MIT-625B71?style=flat-square&labelColor=1D1B20" /><img alt="MIT License" src="https://img.shields.io/badge/license-MIT-625B71?style=for-the-badge&labelColor=1D1B20" /></picture></a>
-  <br />
-  <a href="https://m3.material.io/"><picture><source media="(max-width: 767px)" srcset="https://img.shields.io/badge/Material_3-Expressive-6750A4?style=flat-square&logo=materialdesign&logoColor=white&labelColor=1D1B20" /><img alt="Material 3 Expressive" src="https://img.shields.io/badge/Material_3-Expressive-6750A4?style=for-the-badge&logo=materialdesign&logoColor=white&labelColor=1D1B20" /></picture></a>
-  <a href="https://nextjs.org/"><picture><source media="(max-width: 767px)" srcset="https://img.shields.io/badge/Next.js-16-625B71?style=flat-square&logo=nextdotjs&logoColor=white&labelColor=1D1B20" /><img alt="Next.js 16" src="https://img.shields.io/badge/Next.js-16-625B71?style=for-the-badge&logo=nextdotjs&logoColor=white&labelColor=1D1B20" /></picture></a>
-  <a href="https://react.dev/"><picture><source media="(max-width: 767px)" srcset="https://img.shields.io/badge/React-19-625B71?style=flat-square&logo=react&logoColor=61DAFB&labelColor=1D1B20" /><img alt="React 19" src="https://img.shields.io/badge/React-19-625B71?style=for-the-badge&logo=react&logoColor=61DAFB&labelColor=1D1B20" /></picture></a>
-</p>
+# VYRO App Builder
 
-<p align="center">
-  <a href="https://trendshift.io/repositories/208608"><img alt="Trendshift: #1 repository of the day" src="https://trendshift.io/api/badge/trendshift/repositories/208608/daily" width="250" height="55" /></a>
-</p>
+**Editor visual open source para desenhar interfaces e evoluir para a criação de aplicações web completas.**
 
-<p align="center"><a href="README.md"><img src="docs/readme/ui/lang-en-on.png" height="40" alt="English" /></a><a href="README.ja.md"><img src="docs/readme/ui/lang-ja.png" height="40" alt="日本語" /></a><a href="README.zh.md"><img src="docs/readme/ui/lang-zh.png" height="40" alt="中文" /></a><a href="README.ko.md"><img src="docs/readme/ui/lang-ko.png" height="40" alt="한국어" /></a></p>
+[![Licença MIT](https://img.shields.io/badge/licença-MIT-8b5cf6)](LICENSE)
+[![Next.js](https://img.shields.io/badge/Next.js-16-111827)](https://nextjs.org/)
+[![React](https://img.shields.io/badge/React-19-06b6d4)](https://react.dev/)
+[![Status](https://img.shields.io/badge/status-em%20desenvolvimento-f59e0b)](#estado-atual-do-projeto)
 
-<p align="center"><img src="docs/readme/demo.gif" alt="Sketching the Pantry recipe app in M3E Canvas, tapping through its screens, copying the prompt, Claude Code building it in a terminal, and the finished app running on a phone" /></p>
+**[Instalação](#instalação-passo-a-passo) · [Como usar](#primeiros-passos-no-editor) · [Roadmap](#roadmap) · [Manuais](#documentação) · [Licença](#licença-e-uso-comercial)**
 
-<p align="center">Sketch the screens, tap through the flow, copy the prompt, and let your AI coding tool build the app. (<a href="docs/readme/demo.mp4">mp4</a>)</p>
+</div>
 
-M3E Canvas is a free, open-source sketchpad for app screens made of real Material 3 Expressive parts. It runs entirely in your browser: no account, no server, nothing to install. What you sketch becomes a precise prompt that any AI coding tool that takes one, such as Claude Code, Codex, Gemini CLI or Cursor, can turn into a working app.
+> **Atenção:** este projeto é um fork do [M3E Canvas](https://github.com/lnkiai/m3e-canvas). A versão atual ainda é principalmente um editor de interfaces Material 3 Expressive e gerador de prompts para ferramentas de IA. **Não é, neste momento, um concorrente funcional completo do Bubble ou FlutterFlow.** Os recursos de banco de dados, CRUD full stack, publicação e orquestração de agentes fazem parte do roadmap.
 
-<p align="center"><a href="https://lnkiai.github.io/m3e-canvas/"><img src="docs/readme/ui/open-en.png" height="56" alt="Open the app" /></a></p>
+## Visão
 
-## <img src="docs/readme/ui/icon-how.png" width="32" height="32" align="absmiddle" alt="" /> How it works
+Queremos que desenvolvedores, estudantes, freelancers e pequenas software houses possam criar interfaces, evoluir para sistemas web funcionais, exportar seu código e comercializar os aplicativos desenvolvidos. O **VYRO App Builder** continuará open source; os sistemas criados com ele podem ser distribuídos comercialmente conforme as licenças dos componentes utilizados.
 
-<picture>
-  <source media="(max-width: 767px)" srcset="docs/readme/cards/how-narrow.png" />
-  <img src="docs/readme/cards/how-wide.png" alt="The three steps: building a screen from the parts panel, tapping through it in the preview, and copying the prompt" />
-</picture>
+## Estado atual do projeto
 
-1. **Sketch** — Drag parts onto phone or desktop screens. They snap together and line up on a 4dp grid.
-2. **Tap through** — Link parts to screens and press Preview to try the flow, transitions included.
-3. **Copy the prompt** — The whole design becomes a short brief in your language. Paste it into your AI coding tool.
+| Recurso | Estado | Observações |
+| --- | --- | --- |
+| Editor visual Material 3 Expressive | Disponível na base original | Componentes, telas e propriedades |
+| Pré-visualização e navegação entre telas | Disponível na base original | Simulação de fluxos de interface |
+| Temas, cores e camadas | Disponível na base original | Personalização visual |
+| Geração de prompts para IA | Disponível na base original | **Não equivale à exportação de um sistema completo** |
+| Assistentes opcionais de IA | Disponível na base original | OpenAI, Claude, Gemini e DeepSeek; dependem de configuração |
+| Tradução completa para português brasileiro | Planejado | Interface original possui outros idiomas |
+| Exportação de projetos web completos | Planejado | HTML/CSS/JS e React |
+| CRUD visual com banco de dados | Planejado | Backend e persistência reais |
+| Orquestração de agentes e Ollama | Planejado | Integração supervisionada |
+| Publicação e hospedagem de aplicativos | Planejado | Requer infraestrutura e segurança |
 
-## <img src="docs/readme/ui/icon-features.png" width="32" height="32" align="absmiddle" alt="" /> What's inside
+## Requisitos
 
-<picture>
-  <source media="(max-width: 767px)" srcset="docs/readme/cards/features-narrow.png" />
-  <img src="docs/readme/cards/features-wide.png" alt="Four features: a part's own panel, linked screens, the colors panel and the Ask an AI dialog" />
-</picture>
+- **Node.js:** `^22.12.0 || ^24.0.0 || >=26.0.0` (conforme `package.json`).
+- **npm:** instalado com o Node.js.
+- **Git:** recomendado para clonar e atualizar.
+- Navegador moderno (Chrome, Edge, Firefox ou equivalente).
+- Windows, Linux ou macOS com ambiente Node.js compatível.
 
-<img src="docs/readme/ui/feature-parts.png" width="24" height="24" align="absmiddle" alt="" /> **Real M3 Expressive parts** — Buttons, FABs, bars, tabs, cards, lists, sheets, pickers, carousels, loading indicators and more, each with its own panel for text, style, size and what a tap does.
+> **Não é necessário instalar XAMPP, PHP ou MySQL** para executar o editor atual. Essas tecnologias podem ser usadas futuramente em aplicações geradas, conforme a arquitetura escolhida.
 
-<img src="docs/readme/ui/feature-flow.png" width="24" height="24" align="absmiddle" alt="" /> **Screens and flow** — Phone and desktop screens, screens that scroll, taps and swipes that open other screens with the transition you pick, and arrows that show the whole flow.
+## Instalação passo a passo
 
-<img src="docs/readme/ui/feature-theme.png" width="24" height="24" align="absmiddle" alt="" /> **Theme in one place** — Color, shape, type and motion: seven palettes or your own seed color, light and dark, three contrast levels, corner styles, fonts and the expressive spring motion.
+### Opção A — Windows (PowerShell)
 
-<img src="docs/readme/ui/feature-ai.png" width="24" height="24" align="absmiddle" alt="" /> **Optional AI help** — Bring your own key to draft a design or write notes for you, or copy an instruction for a coding agent that replies with a share link. Keys never leave your browser.
+1. Instale o Node.js compatível em https://nodejs.org/ e o Git em https://git-scm.com/.
+2. Abra o PowerShell e confira as versões:
 
-<details>
-<summary><b>Everything it can do</b></summary>
-
-- **Parts** – buttons, icon buttons, FABs and extended FABs, FAB menus, split buttons, chips, top app bars, navigation bars and rails, floating toolbars, tabs, search bars, cards, list items, boxes, bottom sheets, dialogs, snackbars, text fields, dropdowns, switches, checkboxes, radio buttons, sliders, date and time pickers, text, images, carousels, camera and map placeholders, dividers, the shape-morphing loading indicator and wavy progress indicators. Every part has a panel for its text, style, size and alignment, and a trigger tab for what a tap does.
-- **Magnetic connections** – bring buttons, chips or list items close and they fuse into a connected group; the corners soften where they meet.
-- **Phone and desktop screens** – add as many screens as you like. Switch any screen between a 412×892 phone and a 1280×800 desktop from its label: bars stretch, a navigation bar becomes a rail and back again, and the parts are laid out again. Same-named screens are written into the prompt as one screen at two widths.
-- **Screens that scroll** – make a screen longer than its device and its body scrolls under the bars in the preview. Drag the grip on the bottom bezel, or pick 1x to 3x in the screen panel.
-- **Tap and swipe to navigate** – give any tappable part, app bar icon or navigation destination a target screen (or "back") and a transition: slide from any side, fade, expand or none. Screens can also open others on a swipe. The preview plays it all, and back runs in reverse.
-- **Layers and groups** – a layers panel per screen to change the stacking order; group parts to keep their overlap and move them as one, then copy and paste whole selections across screens.
-- **Theme** – seven palettes or one seed color that becomes a full Material 3 scheme you can fine-tune, light and dark, three contrast levels and dynamic color. Square, rounded or full corners for every part at once. Roboto, Roboto Flex, Roboto Serif or the system font. The standard or the expressive spring motion, which also drives the preview.
-- **Prompt** – the whole design or a single screen as a concise brief in Japanese, English, Chinese or Korean, with your notes on what each part does. Rows, overlaps and aligned grids of cards are spelled out, so the generated layout keeps them. Choose Android or the web as the target, edit the text before copying, or save a screen as a PNG.
-- **Tidy** – one button snaps bars to the edges and the FAB to the corner, joins neighbouring items, and stacks the rest on 16dp margins. Press it again to undo.
-- **AI helper (optional)** – bring your own key for OpenAI, Claude, Gemini or DeepSeek to draft a design from a sentence or write a part's behaviour note and a screen's description. Every rewrite can be undone. The request goes straight from your browser to the provider.
-- **Share links** – copy a link that opens your design on anyone's canvas, or an instruction for Claude Code, Codex or another agent: it reads [agent.md](public/agent.md), sketches what you described, and replies with such a link.
-- **Everything else** – alignment guides and a 4dp grid, undo and redo, keyboard shortcuts, a keyboard-usable parts panel, favorites, install as an app, and autosave in your browser.
-- **On a phone** – one fixed screen and a buttons-only editor with bottom sheets. The full editor is for desktop browsers.
-
-</details>
-
-## <img src="docs/readme/ui/icon-keyboard.png" width="32" height="32" align="absmiddle" alt="" /> Keyboard
-
-| Key | Action |
-| --- | --- |
-| `V` / `H` | Select / hand tool (hold `Space` to pan) |
-| Wheel, `Ctrl` + wheel | Pan, zoom |
-| `+` `-` `0` | Zoom in, zoom out, fit |
-| `Ctrl+Z` / `Ctrl+Shift+Z` | Undo / redo |
-| `Ctrl+C` / `Ctrl+V` | Copy / paste parts, also across screens |
-| `Ctrl+D` | Duplicate |
-| `Ctrl+G` / `Ctrl+Shift+G` | Group / ungroup |
-| `Shift` + click | Add to the selection |
-| Arrows (`Shift` = 8dp) | Nudge |
-| `Ctrl` + drag | Move without snapping (no guides, no 4dp grid) |
-| `Delete` | Delete part or screen |
-| `P` | Preview |
-
-## <img src="docs/readme/ui/icon-run.png" width="32" height="32" align="absmiddle" alt="" /> Run it locally
-
-```bash
-npm install
-npm run dev        # http://localhost:3000
-npm run build      # static export to ./out
+```powershell
+node --version
+npm --version
+git --version
 ```
 
-The app is a static Next.js export. To host it under a sub-path (for example a GitHub Pages project site), set `NEXT_PUBLIC_BASE_PATH=/your-repo` at build time. `.github/workflows/deploy.yml` does this and publishes `out/` to GitHub Pages on every push to `main`.
+3. Clone o fork e entre na pasta:
 
-## <img src="docs/readme/ui/icon-contribute.png" width="32" height="32" align="absmiddle" alt="" /> Contributing
+```powershell
+git clone https://github.com/WalneyNF/VYRO-App-Builder.git
+cd VYRO-App-Builder
+```
 
-Bug reports, part requests and pull requests are welcome. [CONTRIBUTING.md](CONTRIBUTING.md) explains the setup, the conventions (English comments, four languages for every string) and where each kind of change lives. Questions go to [Discussions](https://github.com/lnkiai/m3e-canvas/discussions).
+4. Instale exatamente as dependências do arquivo de lock:
 
-## <img src="docs/readme/ui/icon-support.png" width="32" height="32" align="absmiddle" alt="" /> Support
+```powershell
+npm ci
+```
 
-M3E Canvas is free and MIT-licensed, and stays that way. If it saves you time, you can [sponsor the work on GitHub](https://github.com/sponsors/lnkiai); it pays for the hours that go into new parts, the prompt, and reviewing contributions. No feature is behind sponsorship.
+5. Inicie o servidor de desenvolvimento:
 
-<p><a href="https://github.com/sponsors/lnkiai"><img src="docs/readme/ui/sponsor-en.png" height="48" alt="Sponsor on GitHub" /></a></p>
+```powershell
+npm run dev
+```
 
-Thanks to the sponsors who keep this going:
+6. Abra **http://localhost:3000** (ou a porta informada no terminal). Para encerrar, pressione **Ctrl+C**.
 
-<!-- sponsors:start -->
-<p><a href="https://github.com/YspritanHyzygy" title="YspritanHyzygy"><img src="docs/readme/people/YspritanHyzygy.png" width="52" height="52" alt="YspritanHyzygy" /></a></p>
-<!-- sponsors:end -->
+### Opção B — Linux / macOS
 
-## <img src="docs/readme/ui/icon-thanks.png" width="32" height="32" align="absmiddle" alt="" /> Thanks
+```bash
+git clone https://github.com/WalneyNF/VYRO-App-Builder.git
+cd VYRO-App-Builder
+npm ci
+npm run dev
+```
 
-Thanks to everyone who has contributed code, ideas and reviews:
+Acesse o endereço local informado pelo Next.js.
 
-<!-- contributors:start -->
-<p><a href="https://github.com/CQMHV" title="CQMHV"><img src="docs/readme/people/CQMHV.png" width="52" height="52" alt="CQMHV" /></a> <a href="https://github.com/Cokedog320" title="Cokedog320"><img src="docs/readme/people/Cokedog320.png" width="52" height="52" alt="Cokedog320" /></a> <a href="https://github.com/Grenish" title="Grenish"><img src="docs/readme/people/Grenish.png" width="52" height="52" alt="Grenish" /></a> <a href="https://github.com/YspritanHyzygy" title="YspritanHyzygy"><img src="docs/readme/people/YspritanHyzygy.png" width="52" height="52" alt="YspritanHyzygy" /></a> <a href="https://github.com/andrewwbuilds" title="andrewwbuilds"><img src="docs/readme/people/andrewwbuilds.png" width="52" height="52" alt="andrewwbuilds" /></a> <a href="https://github.com/rishabhiskawai" title="rishabhiskawai"><img src="docs/readme/people/rishabhiskawai.png" width="52" height="52" alt="rishabhiskawai" /></a> <a href="https://github.com/j-token" title="j-token"><img src="docs/readme/people/j-token.png" width="52" height="52" alt="j-token" /></a> <a href="https://github.com/FlyGues2889" title="FlyGues2889"><img src="docs/readme/people/FlyGues2889.png" width="52" height="52" alt="FlyGues2889" /></a> <a href="https://github.com/xiehuanyi" title="xiehuanyi"><img src="docs/readme/people/xiehuanyi.png" width="52" height="52" alt="xiehuanyi" /></a> <a href="https://github.com/Razshy" title="Razshy"><img src="docs/readme/people/Razshy.png" width="52" height="52" alt="Razshy" /></a> <a href="https://github.com/aakash-kharb" title="aakash-kharb"><img src="docs/readme/people/aakash-kharb.png" width="52" height="52" alt="aakash-kharb" /></a> <a href="https://github.com/kevin9327" title="kevin9327"><img src="docs/readme/people/kevin9327.png" width="52" height="52" alt="kevin9327" /></a></p>
-<!-- contributors:end -->
+### Usando a cópia já instalada no computador do mantenedor
 
-## <img src="docs/readme/ui/icon-credits.png" width="32" height="32" align="absmiddle" alt="" /> Credits
+```powershell
+cd D:\VYRO-App-Builder
+npm run dev
+```
 
-- Loading indicator shapes and animation model: [material-components-android](https://github.com/material-components/material-components-android) (Apache-2.0) via [Aler1x/m3-loading-indicator](https://github.com/Aler1x/m3-loading-indicator). See `NOTICE`.
-- Icons: [Material Symbols](https://fonts.google.com/icons) (Apache-2.0). Fonts are loaded from Google Fonts.
+Se a porta 3000 estiver ocupada, o Next.js pode oferecer outra porta. Confira sempre a saída do terminal.
 
-## <img src="docs/readme/ui/icon-seealso.png" width="32" height="32" align="absmiddle" alt="" /> See also
+## Primeiros passos no editor
 
-- [matraic/m3e](https://github.com/matraic/m3e) – Material 3 Expressive as Lit web components (MIT), with React bindings and an icon package. A good home for the screens you sketch here.
-- [Beer CSS](https://www.beercss.com/) – Material Design 3 as a plain CSS framework (MIT). Another way to build the web version of a screen you sketch here.
+1. **Crie ou selecione uma tela** para celular ou desktop.
+2. **Adicione componentes** pelo painel de peças: botões, textos, campos, cartões e outros elementos.
+3. **Edite propriedades** como textos, dimensões, cores e aparência.
+4. **Organize as camadas** e configure ações de navegação entre telas.
+5. **Use a pré-visualização** para testar o fluxo de interface.
+6. **Salve ou compartilhe o desenho** usando os recursos existentes.
+7. **Gere um prompt**, quando desejar enviar a descrição da interface a uma ferramenta de programação com IA.
 
-## <img src="docs/readme/ui/icon-contact.png" width="32" height="32" align="absmiddle" alt="" /> Contact
+**Importante:** a pré-visualização de um formulário não implica que exista um banco de dados por trás dele. Persistência e API são etapas futuras do VYRO.
 
-For anything that does not fit an issue, such as collaboration or press, get in touch:
+## Comandos úteis
 
-<p><a href="mailto:info@lnkiai.com"><img src="docs/readme/ui/contact-mail.png" height="48" alt="info@lnkiai.com" /></a><a href="https://x.com/lnkiai"><img src="docs/readme/ui/contact-x.png" height="48" alt="@lnkiai on X" /></a></p>
+| Comando | Finalidade |
+| --- | --- |
+| `npm ci` | Instala dependências conforme o lockfile |
+| `npm run dev` | Inicia o editor para desenvolvimento |
+| `npm run typecheck` | Verifica tipos TypeScript |
+| `npm test` | Executa testes com Vitest |
+| `npm run build` | Gera a versão estática de produção |
+| `npm run start` | Serve a pasta `out` gerada pelo build |
 
-## <img src="docs/readme/ui/icon-license.png" width="32" height="32" align="absmiddle" alt="" /> License
+### Compilar e testar antes de publicar
 
-MIT © lnkiai
+```powershell
+npm run typecheck
+npm test
+npm run build
+```
+
+O projeto usa exportação estática do Next.js (`output: "export"`). Para hospedar, publique o conteúdo da pasta `out` em um servidor de arquivos estáticos. O script `npm run start` serve essa pasta localmente, **não inicia um backend de produção**.
+
+### GitHub Pages
+
+Para publicar em um site de projeto do GitHub Pages, o `next.config.ts` aceita a variável `NEXT_PUBLIC_BASE_PATH`. No PowerShell:
+
+```powershell
+$env:NEXT_PUBLIC_BASE_PATH = "/VYRO-App-Builder"
+npm run build
+```
+
+Configure o deploy da pasta `out` de acordo com o fluxo de publicação escolhido. **Não considere o GitHub Pages como hospedagem de banco de dados ou API**: ele publica arquivos estáticos.
+
+## Estrutura principal
+
+```text
+VYRO-App-Builder/
+├── app/                 # Páginas, layout e editor Next.js
+├── components/          # Painéis e componentes visuais
+├── lib/                 # Modelos, internacionalização, IA e utilitários
+├── public/              # Recursos estáticos do aplicativo
+├── docs/                # Imagens e documentação complementar
+│   └── vyro/
+│       └── logo.svg     # Marca textual provisória
+├── manuais/             # Guias em português brasileiro
+├── LICENSE              # Licença MIT original
+├── NOTICE               # Atribuições de componentes de terceiros
+└── package.json         # Dependências e comandos
+```
+
+## Solução de problemas
+
+**`node` ou `npm` não é reconhecido:** reinstale o Node.js, feche e reabra o terminal e verifique `node --version`.
+
+**Erro ao executar scripts no PowerShell:** experimente `npm.cmd ci` e `npm.cmd run dev`; não é necessário desativar indiscriminadamente a política de execução.
+
+**Porta 3000 ocupada:** use a porta que aparecer no terminal ou encerre o processo anterior.
+
+**Dependências inconsistentes:** confira a versão do Node.js e execute `npm ci` novamente. Evite apagar o lockfile sem necessidade.
+
+**Erro no build:** execute `npm run typecheck`, `npm test` e consulte o erro exato no terminal antes de alterar dependências.
+
+**O editor não gera banco de dados:** isso ainda não foi implementado; veja o roadmap.
+
+**Chaves de IA:** a base original guarda configurações no armazenamento local do navegador. Não coloque segredos de clientes ou chaves de produção em máquinas compartilhadas; a arquitetura comercial futura exigirá proteção no backend.
+
+## Roadmap
+
+- **0.1 — Fundação:** identidade VYRO, documentação, português brasileiro e testes.
+- **0.2 — Código exportável:** projetos HTML/CSS/JS e React independentes do editor.
+- **0.3 — Sistemas reais:** formulários, CRUD, API, SQLite e migrações.
+- **0.4 — Agentes:** orquestrador, revisão, aprovação e testes automáticos.
+- **0.5 — Workflows e publicação:** autenticação, ações, implantação e backups.
+- **1.0 — Produto consolidado:** templates, exemplos comerciais, manuais e qualidade verificada.
+
+As versões acima representam **metas**, não entregas concluídas.
+
+## Documentação
+
+- [Comece aqui](manuais/00-LEIA-PRIMEIRO.md)
+- [Licença e modelos de negócio](manuais/01-LICENCA-E-NEGOCIOS.md)
+- [Arquitetura e segurança](manuais/02-ARQUITETURA-E-SEGURANCA.md)
+- [Roadmap e critérios de aceitação](manuais/03-ROADMAP-E-CRITERIOS.md)
+- [Guia do criador](manuais/04-GUIA-DO-CRIADOR.md)
+
+## Licença e uso comercial
+
+O projeto é derivado de **M3E Canvas**, licenciado sob [MIT](LICENSE), com copyright original de **lnkiai**. A MIT permite uso, modificação e distribuição comercial, exigindo a preservação dos avisos de licença e copyright nas cópias ou partes substanciais distribuídas. Consulte também o arquivo [NOTICE](NOTICE) e as licenças das dependências e recursos incorporados.
+
+**Você pode desenvolver e vender aplicações usando a ferramenta.** Contudo, imagens, fontes, bibliotecas, templates e outros recursos utilizados nessas aplicações podem ter obrigações próprias. Faça uma auditoria de licenças antes da distribuição comercial.
+
+## Contribuições e comunidade
+
+Sugestões, relatórios de bugs, documentação e contribuições de código são bem-vindos. Antes de abrir um pull request, execute:
+
+```bash
+npm run typecheck
+npm test
+npm run build
+```
+
+Descreva o problema, o comportamento esperado, os arquivos alterados e os testes realizados. Não inclua credenciais, informações privadas de clientes ou arquivos gerados com dados sensíveis.
+
+## Créditos
+
+**VYRO App Builder — Walney Moreira Klein — walneyk@hotmail.com**
+
+Fork e evolução do projeto original [M3E Canvas, de lnkiai](https://github.com/lnkiai/m3e-canvas). Créditos, direitos e licenças dos autores originais permanecem preservados em [LICENSE](LICENSE) e [NOTICE](NOTICE).
+
+> A arte `docs/vyro/logo.svg` é uma **marca textual provisória** para o README. A identidade ilustrada com dragão aprovada para o VYRO deverá substituí-la quando seu arquivo final estiver incorporado ao repositório.
