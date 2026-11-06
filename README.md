@@ -1,6 +1,6 @@
 <div align="center">
 
-![VYRO App Builder — identidade visual provisória](docs/vyro/logo.svg)
+![VYRO App Builder — logo oficial com dragão](logo.png)
 
 # VYRO App Builder
 
@@ -154,7 +154,7 @@ VYRO-App-Builder/
 ├── public/              # Recursos estáticos do aplicativo
 ├── docs/                # Imagens e documentação complementar
 │   └── vyro/
-│       └── logo.svg     # Marca textual provisória
+│       └── logo.svg     # Marca textual alternativa
 ├── manuais/             # Guias em português brasileiro
 ├── LICENSE              # Licença MIT original
 ├── NOTICE               # Atribuições de componentes de terceiros
@@ -220,4 +220,4 @@ Descreva o problema, o comportamento esperado, os arquivos alterados e os testes
 
 Fork e evolução do projeto original [M3E Canvas, de lnkiai](https://github.com/lnkiai/m3e-canvas). Créditos, direitos e licenças dos autores originais permanecem preservados em [LICENSE](LICENSE) e [NOTICE](NOTICE).
 
-> A arte `docs/vyro/logo.svg` é uma **marca textual provisória** para o README. A identidade ilustrada com dragão aprovada para o VYRO deverá substituí-la quando seu arquivo final estiver incorporado ao repositório.
+> A imagem oficial do projeto é a arte com dragão e interface neon, em `logo.png`.
